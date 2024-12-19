@@ -1,3 +1,3 @@
 .vs
-.CRUDCSharpSQLServer/bin
-.CRUDCSharpSQLServer/obj
+.CRUDCSharpSQLServer/bin/
+.CRUDCSharpSQLServer/obj/
