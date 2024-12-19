@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUDCSharpSQLServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3f624d5f9757099b2d5be8c1cecd437d3930af")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUDCSharpSQLServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUDCSharpSQLServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
