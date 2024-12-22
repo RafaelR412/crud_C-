@@ -101,6 +101,7 @@
             btnGuardar.TabIndex = 10;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtEdad
             // 
@@ -190,6 +191,7 @@
             RegistroD.Name = "RegistroD";
             RegistroD.Size = new Size(482, 272);
             RegistroD.TabIndex = 1;
+            RegistroD.CellContentClick += RegistroD_CellContentClick;
             // 
             // Form1
             // 
@@ -202,6 +204,7 @@
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)RegistroD).EndInit();
