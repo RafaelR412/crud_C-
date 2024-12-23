@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CRUDCsharpSQLServer.Clases
 {
@@ -17,7 +18,7 @@ namespace CRUDCsharpSQLServer.Clases
         static String contrasenia = "fabi";
         static String puerto = "1433";
 
-        String cadenaConexion = "Data Source=" + servidor + "," + puerto + ";user id=" + usuario + ";password=" + contrasenia + ";Initial Catalog=" + bd + "Persist Security Info=True";
+        String cadenaConexion = "Data Source=" + servidor + "," + puerto + ";" + ";user id=" + usuario + ";" + " ;password=" + contrasenia + "Initial Catalog=" + bd + "Persist Security Info=True";
 
 
 
@@ -29,7 +30,7 @@ namespace CRUDCsharpSQLServer.Clases
                 conex.Open();
                 MessageBox.Show("Se conecto correctamente a la Base de Datos");
             }
-            catch (Exeption ex) {
+            catch (Exception ex) {
 
                 MessageBox.Show("No se conecto correctamente a la Base de Datos, Error: "+ ex.ToString());
             }
