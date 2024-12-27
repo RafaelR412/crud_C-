@@ -86,5 +86,76 @@ namespace CRUDCsharpSQLServer.Clases
             }
         }
 
+        public void ModificarAlumnos(TextBox paramID, TextBox paramDNI, TextBox paramNombres, TextBox paramApellidos, TextBox paramEdad)
+        {
+
+            CConexion objetoConexion = new CConexion();
+
+            try
+            {
+                String Query = "UPDATE alumnos set alumnos.dni = '" +
+                       paramDNI.Text + " ',alumnos.nombres = '" + paramNombres.Text + " ',alumnos.apellidos = '" + paramApellidos.Text + " ',alumnos.edad = '" + paramEdad.Text + "'WHERE alumnos.codigo='" + paramID.Text + "';";
+
+                SqlCommand myComando = new SqlCommand(Query, objetoConexion.establecerConexion());
+                SqlDataReader myReader;
+                myReader = myComando.ExecuteReader();
+
+                MessageBox.Show("Se modifico correctamente");
+
+                while (myReader.Read())
+                {
+                }
+
+                MessageBox.Show("Se guardo correctamente");
+
+
+                objetoConexion.cerrarConexion();
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("NO se logro Modificar los registros, error: " + ex.ToString());
+
+            }
+        }
+
+        public void EliminarAlumnos(TextBox paramID)
+        {
+
+            CConexion objetoConexion = new CConexion();
+
+            try
+            {
+                String Query = "UPDATE alumnos set alumnos.dni = '" +
+                       paramDNI.Text + " ',alumnos.nombres = '" + paramNombres.Text + " ',alumnos.apellidos = '" + paramApellidos.Text + " ',alumnos.edad = '" + paramEdad.Text + "'WHERE alumnos.codigo='" + paramID.Text + "';";
+
+                SqlCommand myComando = new SqlCommand(Query, objetoConexion.establecerConexion());
+                SqlDataReader myReader;
+                myReader = myComando.ExecuteReader();
+
+                MessageBox.Show("Se modifico correctamente");
+
+                while (myReader.Read())
+                {
+                }
+
+                MessageBox.Show("Se guardo correctamente");
+
+
+                objetoConexion.cerrarConexion();
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("NO se logro Modificar los registros, error: " + ex.ToString());
+
+            }
+        }
+
+
     }
 }

@@ -192,6 +192,7 @@
             RegistroD.Size = new Size(482, 272);
             RegistroD.TabIndex = 1;
             RegistroD.CellContentClick += RegistroD_CellContentClick;
+            RegistroD.CellMouseClick += RegistroD_CellMouseClick;
             // 
             // Form1
             // 

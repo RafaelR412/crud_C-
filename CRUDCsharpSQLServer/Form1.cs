@@ -11,7 +11,9 @@ namespace CRUDCsharpSQLServer
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
+            objetoAlumnos.ModificarAlumnos(txtID, txtDNI, txtNombres, txtApellidos, txtEdad);
+            objetoAlumnos.mostrarAlumnos(RegistroD);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,6 +34,11 @@ namespace CRUDCsharpSQLServer
         }
 
         private void RegistroD_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+         
+        }
+
+        private void RegistroD_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
             objetoAlumnos.SeleccionarAlumnos(RegistroD, txtID, txtDNI, txtNombres, txtApellidos, txtEdad);
