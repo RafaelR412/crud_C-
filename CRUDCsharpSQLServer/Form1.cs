@@ -7,6 +7,8 @@ namespace CRUDCsharpSQLServer
             InitializeComponent();
             Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
             objetoAlumnos.mostrarAlumnos(RegistroD);
+
+            txtID.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -14,6 +16,12 @@ namespace CRUDCsharpSQLServer
             Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
             objetoAlumnos.ModificarAlumnos(txtID, txtDNI, txtNombres, txtApellidos, txtEdad);
             objetoAlumnos.mostrarAlumnos(RegistroD);
+
+            txtID.Text = "";
+            txtDNI.Text = "";
+            txtNombres.Text = "";
+            txtApellidos.Text = "";
+            txtEdad.Text = "";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,17 +39,36 @@ namespace CRUDCsharpSQLServer
             Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
             objetoAlumnos.guardarAlumnos(txtDNI, txtNombres, txtApellidos, txtEdad);
             objetoAlumnos.mostrarAlumnos(RegistroD);
+
+            txtID.Text = "";
+            txtDNI.Text = "";
+            txtNombres.Text = "";
+            txtApellidos.Text = "";
+            txtEdad.Text = "";
         }
 
         private void RegistroD_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-         
+
         }
 
         private void RegistroD_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
             objetoAlumnos.SeleccionarAlumnos(RegistroD, txtID, txtDNI, txtNombres, txtApellidos, txtEdad);
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Clases.CAlumnosV objetoAlumnos = new Clases.CAlumnosV();
+            objetoAlumnos.EliminarAlumnos(txtID);
+            objetoAlumnos.mostrarAlumnos(RegistroD);
+
+            txtID.Text = "";
+            txtDNI.Text = "";
+            txtNombres.Text = "";
+            txtApellidos.Text = "";
+            txtEdad.Text = "";
         }
     }
 }

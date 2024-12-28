@@ -128,21 +128,18 @@ namespace CRUDCsharpSQLServer.Clases
 
             try
             {
-                String Query = "UPDATE alumnos set alumnos.dni = '" +
-                       paramDNI.Text + " ',alumnos.nombres = '" + paramNombres.Text + " ',alumnos.apellidos = '" + paramApellidos.Text + " ',alumnos.edad = '" + paramEdad.Text + "'WHERE alumnos.codigo='" + paramID.Text + "';";
+                String Query = "DELETE FROM alumnos WHERE alumnos.codigo='" + paramID.Text + "';";
 
                 SqlCommand myComando = new SqlCommand(Query, objetoConexion.establecerConexion());
                 SqlDataReader myReader;
                 myReader = myComando.ExecuteReader();
 
-                MessageBox.Show("Se modifico correctamente");
+                MessageBox.Show("Se elimino correctamente");
 
                 while (myReader.Read())
                 {
+
                 }
-
-                MessageBox.Show("Se guardo correctamente");
-
 
                 objetoConexion.cerrarConexion();
 
@@ -151,7 +148,7 @@ namespace CRUDCsharpSQLServer.Clases
             catch (Exception ex)
             {
 
-                MessageBox.Show("NO se logro Modificar los registros, error: " + ex.ToString());
+                MessageBox.Show("NO se logro Eliminar el alumno, error: " + ex.ToString());
 
             }
         }
