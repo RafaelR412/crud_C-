@@ -13,16 +13,16 @@ namespace CRUDCsharpSQLServer.Clases
         SqlConnection conex = new SqlConnection();
 
         static String servidor = "localhost";
-        static String bd = "colegioFB";
-        static String usuario = "fabi";
-        static String contrasenia = "fabi";
+        static String bd = "colegiofb";
+        static String usuario = "fabian";
+        static String contrasenia = "fabian";
         static String puerto = "1433";
 
-        String cadenaConexion = "Data Source=" + servidor + "," + puerto + ";" + ";user id=" + usuario + ";" + " ;password=" + contrasenia + "Initial Catalog=" + bd + "Persist Security Info=True";
+        String cadenaConexion = "Data Source=" + servidor + "," + puerto + ";Initial Catalog=" + bd + ";User ID=" + usuario + ";Password=" + contrasenia + ";Persist Security Info=True;";
 
 
 
-            public SqlConnection establecerconexion() {
+        public SqlConnection establecerconexion() {
         
             try {
 

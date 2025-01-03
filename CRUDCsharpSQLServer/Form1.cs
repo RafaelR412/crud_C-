@@ -5,8 +5,8 @@ namespace CRUDCsharpSQLServer
         public Form1()
         {
             InitializeComponent();
-            Clases.CConexion objetConexion = new Clases.CConexion();
-            objetConexion.establecerconexion();
+            Clases.CAlumnos ObjetoAlumnos = new Clases.CAlumnos();
+            ObjetoAlumnos.mostraralumnos(dgvAlumnos);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

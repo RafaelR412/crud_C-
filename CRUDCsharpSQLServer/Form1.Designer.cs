@@ -42,9 +42,9 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
+            dgvAlumnos = new DataGridView();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAlumnos).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -185,34 +185,34 @@
             label1.Text = "ID";
             label1.Click += label1_Click;
             // 
-            // dataGridView1
+            // dgvAlumnos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(255, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(466, 283);
-            dataGridView1.TabIndex = 1;
+            dgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAlumnos.Location = new Point(255, 12);
+            dgvAlumnos.Name = "dgvAlumnos";
+            dgvAlumnos.Size = new Size(466, 283);
+            dgvAlumnos.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(760, 336);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvAlumnos);
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAlumnos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private GroupBox groupBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvAlumnos;
         private Label label5;
         private Label label4;
         private Label label3;
