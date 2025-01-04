@@ -78,6 +78,7 @@
             btnEliminar.TabIndex = 12;
             btnEliminar.Text = "ELIMINAR";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
@@ -85,8 +86,9 @@
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(95, 24);
             btnEditar.TabIndex = 11;
-            btnEditar.Text = "EDITAR";
+            btnEditar.Text = "MODIFICAR";
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnGuardar
             // 
@@ -192,6 +194,8 @@
             dgvAlumnos.Name = "dgvAlumnos";
             dgvAlumnos.Size = new Size(466, 283);
             dgvAlumnos.TabIndex = 1;
+            dgvAlumnos.CellContentClick += dgvAlumnos_CellContentClick;
+            dgvAlumnos.CellMouseClick += dgvAlumnos_CellMouseClick;
             // 
             // Form1
             // 

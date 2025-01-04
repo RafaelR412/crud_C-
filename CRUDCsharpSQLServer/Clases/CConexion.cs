@@ -28,7 +28,7 @@ namespace CRUDCsharpSQLServer.Clases
 
                 conex.ConnectionString= cadenaConexion;
                 conex.Open();
-                MessageBox.Show("Se conecto correctamente a la Base de Datos");
+                //MessageBox.Show("Se conecto correctamente a la Base de Datos");
             }
             catch (Exception ex) {
 
