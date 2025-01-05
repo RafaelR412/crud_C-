@@ -72,7 +72,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.BackColor = SystemColors.ActiveCaption;
+            btnEliminar.BackColor = Color.LightSeaGreen;
             btnEliminar.Location = new Point(116, 251);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(94, 25);
@@ -83,7 +83,7 @@
             // 
             // btnModificar
             // 
-            btnModificar.BackColor = SystemColors.ActiveCaption;
+            btnModificar.BackColor = Color.LightSeaGreen;
             btnModificar.Location = new Point(18, 251);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(92, 25);
@@ -94,7 +94,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = SystemColors.ActiveCaption;
+            btnGuardar.BackColor = Color.LightSeaGreen;
             btnGuardar.ForeColor = SystemColors.ControlText;
             btnGuardar.Location = new Point(18, 215);
             btnGuardar.Name = "btnGuardar";
@@ -199,7 +199,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.FromArgb(164, 125, 221);
             ClientSize = new Size(777, 313);
             Controls.Add(RegistroD);
             Controls.Add(groupBox1);

@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace CRUDCsharpSQLServer
 {
     public partial class Form1 : Form
